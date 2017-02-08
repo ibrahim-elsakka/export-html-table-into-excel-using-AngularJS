@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+      <title>Export</title>
+      <h1>export</h1>
+      <script src="lib/angular.min.js"></script>
+      <script src="js/export.js"></script>
+</head>
+   <body>
+      <div class="search-inner" id="dataTableDiv" ng-class="SearchFilter ? 'results-on': ''" ng-show="!emptyAgreements" ng-controller="exportcontroller">
+           <table id="dataTable" border="1" class="table table-bordered ag-table" style="top:10px;border-width:2px;height:200px;width:200px;"></table>
+           <button ng-click="fnExcelReport($event)">export</button>
+      </div>
+   </body>
+</html>                                          
